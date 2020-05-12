@@ -1,0 +1,145 @@
+html, body{
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*전체 비율 */
+@media(min-width: 350px){
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    width: 100vw;
+    height: 100vh;
+    background: #ababab;
+  }
+  /*전체 사이즈*/
+  .content-wrap{
+    width: 1000px;
+    height: 650px;
+    margin:10 auto;
+    border: 4px solid rgba(161, 161, 161, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  /*main 크기 */
+  .content-left{
+    background: #ababab;
+    color:#000000;
+    float: left;
+    width: 400px;
+    height: 650px;
+    padding: 0px 0 0 0;
+  }
+  /*<<main 여백 */
+  .main-wrap{
+    text-align: right;
+    margin: 10px 20px 0 0;
+  }
+  /*today day */
+  .main-day{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /*today num */
+  .main-date{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0;
+  }
+  /*todolist 여백 */
+  .todo-wrap{
+    text-align: right;
+    padding: 0 20px 0 0;
+  }
+  /*todo list */
+  .todo-title{
+    font-size: 15px;
+    font-weight: 10;
+    margin: 0 0 10px 0;
+  }
+  /*일정 적는부분 */
+  .input-box{
+    width: 75%;
+    height: auto;
+    background: #ffffff;
+    color: #000000;
+    line-height : normal;
+    padding: .8em .5em 0 0;
+    font-family: inherit;
+    border: 0;
+    border-bottom: 1px dashed #FAD29B;;
+    border-radius: 0;
+    outline-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*input button */
+  .input-data{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 20px 0 10px 0;
+    background: #ababab;
+    border: none;
+    color: #0b0809;
+    border-radius: 20px;
+  }
+  /*input button 백,글씨 색 */
+  .input-data:hover{
+    background: #ffffff;
+    color: #0b0809;
+  }
+/*추가된 일정 */
+  .input-list > div{
+    font-size: 17px;
+    width: 85%;
+    float: left;
+    padding: 5px;
+    color: #000000;
+  }
+  /* 일정추가 x 버튼 */
+  .del-data{
+    display: block;
+    color: #ddaf35;
+    float: left;
+    width: 8%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    background: #0b0809;
+    border: none;
+    border-radius: 5px;
+  }
+  /*calendar body 여백,길이 */
+  .content-right{
+    float: right;
+    width: 550px;
+    height: 500px;
+    padding: 0px 20px 20px 20px;
+  }
+  /* 토일 색상 */
+  .sun{
+    color:#ef3333;
+  }
+  .sat{
+    color:#2107e0;
+  }
+  /*calendar body table */
+  .content-right table tr td{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /*today 동그라미 */
+  .active{
+    background: #0b0809;
+    border-radius: 40%;
+    color: #ffffff;
+  }
+}
